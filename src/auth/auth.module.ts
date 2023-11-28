@@ -6,7 +6,6 @@ import { User } from 'src/user/entities/user.entity';
 import { UserModule } from 'src/user/user.module';
 import { TokenModule } from './token/token.module';
 import { MailModule } from 'src/mail/mail.module';
-import { GoogleModule } from './socials/google/google.module';
 import { PasswordService } from './password/password.service';
 import { ForgotModule } from './forgot/forgot.module';
 
@@ -17,7 +16,6 @@ import { ForgotModule } from './forgot/forgot.module';
     TokenModule,
     MailModule,
     ForgotModule,
-    GoogleModule,
   ],
   controllers: [AuthController],
   providers: [AuthService, PasswordService],
